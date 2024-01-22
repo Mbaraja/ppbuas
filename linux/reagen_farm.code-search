@@ -1,0 +1,100 @@
+# Query: reagen_farm
+# ContextLines: 1
+
+28 results - 10 files
+
+linux/CMakeLists.txt:
+  6  # the on-disk name of your application.
+  7: set(BINARY_NAME "warung_bar")
+  8  # The unique GTK application identifier for this application. See:
+
+linux/my_application.cc:
+  42      gtk_widget_show(GTK_WIDGET(header_bar));
+  43:     gtk_header_bar_set_title(header_bar, "warung_bar");
+  44      gtk_header_bar_set_show_close_button(header_bar, TRUE);
+
+  46    } else {
+  47:     gtk_window_set_title(window, "warung_bar");
+  48    }
+
+macos/Runner/Configs/AppInfo.xcconfig:
+  7  // The application's name. By default this is also the title of the Flutter window.
+  8: PRODUCT_NAME = warung_bar
+  9  
+
+macos/Runner.xcodeproj/project.pbxproj:
+   66  		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
+   67: 		33CC10ED2044A3C60003C045 /* warung_bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "warung_bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+   68  		33CC10F02044A3C60003C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
+  133  			children = (
+  134: 				33CC10ED2044A3C60003C045 /* warung_bar.app */,
+  135  				331C80D5294CF71000263BE5 /* RunnerTests.xctest */,
+
+  219  			productName = Runner;
+  220: 			productReference = 33CC10ED2044A3C60003C045 /* warung_bar.app */;
+  221  			productType = "com.apple.product-type.application";
+
+  389  				SWIFT_VERSION = 5.0;
+  390: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/warung_bar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/warung_bar";
+  391  			};
+
+  403  				SWIFT_VERSION = 5.0;
+  404: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/warung_bar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/warung_bar";
+  405  			};
+
+  417  				SWIFT_VERSION = 5.0;
+  418: 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/warung_bar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/warung_bar";
+  419  			};
+
+macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme:
+  33              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  34:             BuildableName = "warung_bar.app"
+  35              BlueprintName = "Runner"
+
+  67              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  68:             BuildableName = "warung_bar.app"
+  69              BlueprintName = "Runner"
+
+  84              BlueprintIdentifier = "33CC10EC2044A3C60003C045"
+  85:             BuildableName = "warung_bar.app"
+  86              BlueprintName = "Runner"
+
+web/index.html:
+  25      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  26:     <meta name="apple-mobile-web-app-title" content="warung_bar" />
+  27      <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+  31  
+  32:     <title>warung_bar</title>
+  33      <link rel="manifest" href="manifest.json" />
+
+web/manifest.json:
+  1  {
+  2:     "name": "warung_bar",
+  3:     "short_name": "warung_bar",
+  4      "start_url": ".",
+
+windows/CMakeLists.txt:
+  2  cmake_minimum_required(VERSION 3.14)
+  3: project(warung_bar LANGUAGES CXX)
+  4  
+
+  6  # the on-disk name of your application.
+  7: set(BINARY_NAME "warung_bar")
+  8  
+
+windows/runner/main.cpp:
+  29    Win32Window::Size size(1280, 720);
+  30:   if (!window.Create(L"warung_bar", origin, size)) {
+  31      return EXIT_FAILURE;
+
+windows/runner/Runner.rc:
+  92              VALUE "CompanyName", "com.example" "\0"
+  93:             VALUE "FileDescription", "warung_bar" "\0"
+  94              VALUE "FileVersion", VERSION_AS_STRING "\0"
+  95:             VALUE "InternalName", "warung_bar" "\0"
+  96              VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+  97:             VALUE "OriginalFilename", "warung_bar.exe" "\0"
+  98:             VALUE "ProductName", "warung_bar" "\0"
+  99              VALUE "ProductVersion", VERSION_AS_STRING "\0"
